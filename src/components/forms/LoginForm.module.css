@@ -1,0 +1,116 @@
+/**
+TEXT INPUT STYLES
+**/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.form_title {
+    font-size: 2rem;
+    color: var(--primary);
+    text-align: left;
+}
+.login_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 1rem;
+  width: 25rem;
+  margin-top: 20vh;
+  background-color: var(--gray);
+}
+label {
+  font-weight: 500;
+}
+form {
+    width: 100%;
+}
+.error {
+  color: var(--warn);
+  font-size: 0.8rem;
+}
+input[type="email"],
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.65rem 0.5rem;
+  font-size: 1rem;
+  border: 2px solid var(--gray);
+  color: var(--black);
+  border-radius: 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+input[type="email"]::placeholder,
+input[type="text"]::placeholder,
+input[type="password"]::placeholder,
+select,
+textarea {
+  color: var(--secondary);
+  font-size: 0.8rem;
+}
+.textInput_div {
+    margin: 0.3rem 0 1.5rem;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border: 2px solid var(--primary);
+}
+
+input:invalid {
+  border: 2px solid var(--warn);
+  box-shadow: none;
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+  padding: 0.5rem 1.25rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  background-color: var(--primary);
+  border: 2px solid var(--primary);
+  color: white;
+  width: 100%;
+  text-decoration: none;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: inline-block;
+  line-height: initial;
+  transition: background-color 200ms ease-in-out, border 200ms ease-in-out,
+    transform 200ms ease-in-out;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+@media (hover: hover) {
+  input[type="submit"]:hover,
+  input[type="reset"]:hover,
+  input[type="button"]:hover,
+  button:hover {
+    cursor: pointer;
+    background-color: var(--secondary);
+    border: 2px solid var(--secondary);
+  }
+}
+
+button:focus-visible,
+input[type="submit"]:focus-visible,
+input[type="reset"]:focus-visible,
+input[type="button"]:focus-visible {
+  border-color: #ff7d87;
+  outline: none;
+}
